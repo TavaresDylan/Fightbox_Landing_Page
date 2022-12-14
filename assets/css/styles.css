@@ -1,73 +1,72 @@
+@import "../../node_modules/bootstrap/dist/css/bootstrap.css";
 @font-face {
-    font-family: "FuturaBold";
-    src: url("../fonts/Futura/FuturaPTBold.otf");
-    font-family: "Futura";
-    src: url("../fonts/Futura/FuturaPTMedium.otf");
+  font-family: "FuturaBold";
+  src: url("../fonts/Futura/FuturaPTBold.otf");
+  font-family: "Futura";
+  src: url("../fonts/Futura/FuturaPTMedium.otf");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+.navbar-brand > span {
+  font-weight: bold;
 }
 
-.navbar-brand > span{
-    font-weight: bold;
-}
-
-#landing-page{
-    background: url(../img/background.png) no-repeat center;
-    background-size: cover;
-    height: calc(100vh - 58px);
-    filter: contrast(130%);
+#landing-page {
+  background: url(../img/background.png) no-repeat center;
+  background-size: cover;
+  height: calc(100vh - 58px);
+  filter: contrast(130%);
 }
 
 #gift-card{
-    background: url(../img/bg-carte-cadeau.png) no-repeat center;
-    background-size: cover;
-    height: 70vh;
-    filter: contrast(130%);
-    z-index: 10;
+  background: url(../img/bg-carte-cadeau.png) no-repeat center;
+  background-size: cover;
+  height: 70vh;
+  filter: contrast(130%);
+  position: relative;
+  z-index: 10;
 }
 #gift-card:after{
-    position: absolute;
-    content:"";
-    height:100%;
-    width:100%;
-    top:0;
-    left:0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%,rgba(0, 0, 0, 0.6) 35%,rgba(0, 0, 0, 0.7) 100%);
+  position: absolute;
+  content:"";
+  height:100%;
+  width:100%;
+  top:0;
+  left:0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%,rgba(0, 0, 0, 0.6) 35%,rgba(0, 0, 0, 0.7) 100%);
 }
 .gift-card-content{
-    z-index: 1000;
-    position: absolute;
-    top: 40%;
-    right: 30%;
-    left: 30%;
+  z-index: 1000;
+  position: absolute;
+  top: 40%;
+  right: 30%;
+  left: 30%;
 }
 
-.title > *{
-    color: white;
+#img-gift{
+  position: relative;
 }
 
-.sub-card-price{
-    border-radius: 12px 0 0 12px;
-    background: #2700FF;
+#gift-content{
+  position: absolute;
 }
 
-.sub-card-price-revert{
-    border-radius: 0 12px 12px 0;
-    background: #2700FF;
+.title > * {
+  color: white;
 }
 
-h1{
-    font-family: "Futura";
+h1 {
+  font-family: "Futura";
 }
 
-img{
-    height: 20%;
+img {
+  height: 20%;
 }
 
-#sec{
-    background: #FFA65D;
+#sec {
+  background: #FFA65D;
 }
