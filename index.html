@@ -15,10 +15,10 @@
 </head>
 
 <body>
-	<header class="shadow-lg bg-light fixed-top">
+	<header class="shadow-lg bg-light">
 		<nav class="navbar navbar-expand-lg">
 			<div class="container-fluid mx-lg-5 px-lg-5">
-				<a class="navbar-brand text-uppercase" href="index.html"><span>Fight</span>box</a>
+				<a class="navbar-brand text-uppercase" href="index.html"><span class="fw-bold">Fight</span>box</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
 					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -31,6 +31,9 @@
 						<li class="nav-item">
 							<a class="nav-link" href="#">Cartes Cadeaux</a>
 						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="ourStory.html">Notre histoire</a>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -38,11 +41,11 @@
 	</header>
 
 	<section id="landing-page">
-		<div class="title d-flex flex-column align-items-center justify-content-around h-100">
+		<div class="d-flex flex-column align-items-center justify-content-around h-100">
 			<img src="assets/img/2redim.png" alt="">
 			<div class="text-center">
-				<h1 class="fs-1 text-center">L'abonnement qui prend soins de toi.</h1>
-				<h2 class="fs-4 text-center">Profite toute l'année des meilleurs produits de nos partenaires pour
+				<h1 class="fs-1 text-center text-white">L'abonnement qui prend soins de toi.</h1>
+				<h2 class="fs-4 text-center text-white">Profite toute l'année des meilleurs produits de nos partenaires pour
 					booster tes
 					capacités et ton confort.</h2>
 			</div>
@@ -122,20 +125,18 @@
 	</section>
 
 	<section id="gift-card">
-		<div class="gift-card-content">
-			<div class="d-flex justify-content-center flex-column h-100">
-				<div id="gift-content" class="d-flex flex-column justify-content-center">
-					<h2 class="text-white text-center">Cartes Cadeaux Fight Box</h2>
-					<h3 class="text-white text-center">FightBox : le cadeaux ultime pour motiver et aider tes proches
-						passionné
-						de sport de combats.</h3>
-					<div class="row pt-5">
-						<div class="col d-flex justify-content-center">
-							<button type="button" class="btn btn-primary text-uppercase">Acheter</button>
-						</div>
-						<div class="col d-flex justify-content-center">
-							<button type="button" class="btn btn-primary text-uppercase">Utiliser mon code</button>
-						</div>
+		<div id="gift-card-content" class="row position-absolute w-100 top-50 translate-middle-y zindex-tooltip">
+			<div class="col-12">
+				<h2 class="text-white text-center w-100">Cartes Cadeaux Fight Box</h2>
+				<h3 class="text-white text-center w-100">FightBox : le cadeaux ultime pour motiver et aider tes proches
+					passionné
+					de sport de combats.</h3>
+				<div class="row pt-5 d-flex justify-content-center">
+					<div class="col-sm-12 col-md-6 d-flex justify-content-center">
+						<button type="button" class="btn btn-primary text-uppercase">Acheter</button>
+					</div>
+					<div class="col-sm-12 col-md-6 d-flex justify-content-center">
+						<button type="button" class="btn btn-primary text-uppercase">Utiliser mon code</button>
 					</div>
 				</div>
 			</div>
