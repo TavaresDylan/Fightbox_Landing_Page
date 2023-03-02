@@ -1,0 +1,8 @@
+@font-face {
+	font-family: "FuturaBold";
+	src: url("../fonts/Futura/FuturaPTBold.otf");
+	font-family: "FuturaExtraBold";
+	src: url("../fonts/Futura/FuturaPTCondExtraBold.otf");
+	font-family: "FuturaLight";
+	src: url("../fonts/Futura/FuturaPTLight.otf");
+}

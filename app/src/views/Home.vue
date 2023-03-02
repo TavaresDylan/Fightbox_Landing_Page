@@ -12,22 +12,23 @@
           <v-icon end size="x-large" icon="mdi-chevron-right"></v-icon
         ></v-btn>
       </div>
-      <img class="img1" src="../assets/Fichier 12.svg" alt="" />
+      <!-- <img class="img1" src="../assets/Fichier 12.svg" alt="" />
       <img class="img1-bis" src="../assets/Fichier 12 copy.svg" alt="" />
       <img class="img2" src="../assets/Fichier 5.svg" alt="" />
-      <img class="img2-bis" src="../assets/Fichier 5 copy.svg" alt="" />
+      <img class="img2-bis" src="../assets/Fichier 5 copy.svg" alt="" /> -->
     </v-container>
 
     <hr class="my-4" />
+    <SubscriptionPricing></SubscriptionPricing>
+    <hr class="my-4" />
+    <Introducing reversed=false > </Introducing>
 
-    <h2>Les box</h2>
-
-    <Introducing/>
   </v-container>
 </template>
 
 <script setup>
-import Introducing from "../components/introducing.vue";
+import Introducing from "../components/Introducing.vue";
+import SubscriptionPricing from "../components/SubscriptionPricing.vue"
 </script>
 
 <style scoped>

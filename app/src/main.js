@@ -1,6 +1,7 @@
 import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router/index";
+import "./assets/css/styles.css"
 
 // Vuetify
 import "vuetify/styles";
@@ -16,7 +17,7 @@ const myCustomLightTheme = {
     surface: "#FFFFFF",
     primary: "#ffa86b",
     "primary-darken-1": "#3700B3",
-    secondary: "#03DAC6",
+    secondary: "#0000FF",
     "secondary-darken-1": "#018786",
     error: "#B00020",
     info: "#2196F3",
