@@ -8,7 +8,7 @@
         cols="12"
         md="6"
         lg="6"
-        class="d-flex flex-column align-center rounded"
+        class="d-flex flex-column align-center rounded my-4"
       >
         <v-avatar
           variant="outlined"
@@ -64,7 +64,9 @@ const memberList: IMember[] = [
     firstname: "Marvin",
     lastname: "Kerthe",
     image: "IMG_4412_rezied.jpeg",
-    description: `Chargé de communication de Fightbox.fr, étudiant au sein du campus Ynov Toulouse.`,
+    description: `Chargé de la communication et du marketing de FightBox.fr et étudiant au sein du campus d’Ynov Toulouse.
+    Il est passionné par l’entreprenariat, l’innovation et les sports de combat.
+    Les défis l’animent au quotidien et la persévérance est son maître mot.`,
   },
 ];
 </script>

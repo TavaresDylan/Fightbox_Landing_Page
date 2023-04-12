@@ -12,7 +12,7 @@
   </v-col>
   <v-col cols="12" md="6">
     <h1 class="text-uppercase font-weight-bold">Sarah</h1>
-    <h2 class="text-uppercase text-subtitle-1 mb-4">Initiatrice de Fightbox</h2>
+    <h2 class="text-uppercase text-subtitle-1 mb-4">Fondatrice de Fightbox</h2>
     <p>
       J’ai eu la chance de grandir en pratiquant du Judo Jujitsu, me permettant
       d’intégrer le groupe France et connaitre le sport à haut niveau. Durant
