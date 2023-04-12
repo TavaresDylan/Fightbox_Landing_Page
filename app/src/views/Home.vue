@@ -26,7 +26,7 @@
   </v-container>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 import Introducing from "../components/Introducing.vue";
 import SubscriptionPricing from "../components/SubscriptionPricing.vue"
 </script>
