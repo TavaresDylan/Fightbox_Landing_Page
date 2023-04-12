@@ -28,7 +28,7 @@
 </template>
 
 <script lang="ts" setup>
-import getImageUrl from '../utilities/imageLoader.js';
+import getImageUrl from "../utilities/imageLoader.js";
 
 type IMember = {
   firstname: string;
@@ -57,7 +57,8 @@ const memberList: IMember[] = [
     firstname: "Sheila",
     lastname: "Bresolin",
     image: "IMG_4154_rezied_2.jpeg",
-    description: `Designeuse UI/UX du site Fightbox.fr, étudiante au campus Ynov Toulouse, passionnée par l'UI/UX.`,
+    description: `UX/UI Designer, ayant suivit une formation dans le jeu vidéo, aujourd'hui elle se spécialise dans l'UX/UI
+    en proposant des maquettes graphique et ergonomique de site web. En collaboration avec Gillian, elle à construit la charte web de FightBox.fr.`,
   },
   {
     firstname: "Marvin",
