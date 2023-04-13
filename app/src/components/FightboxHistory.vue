@@ -1,8 +1,8 @@
 <template>
-<v-col cols="12" md="6" class="rounded-circle text-center">
+<v-col cols="12" md="6" class="rounded-circle text-center d-flex justify-center">
             <v-avatar
               variant="outlined"
-              size="420"
+              size="374"
               :image="getImageUrl('Fichier 3-1.svg')"
             />
           </v-col>

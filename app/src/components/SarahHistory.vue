@@ -6,7 +6,7 @@
   >
     <v-avatar
       variant="outlined"
-      size="420"
+      size="374"
       :image="getImageUrl('IMG_4419_rezied.jpeg')"
     />
   </v-col>
