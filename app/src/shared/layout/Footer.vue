@@ -17,15 +17,15 @@
         </v-list>
       </v-col>
       <v-col cols="12" md="3">
-        <div class="d-flex align-center justify-md-center justify-space-between">
-          <v-row class="align-center">
+        <div class="d-flex align-center justify-md-center justify-center">
+          <div class="align-center">
             <span class="text-h1">#</span>
             <img
               class="custom-img"
               height="74"
               :src="getImageUrl('fightbox-logo-white.svg')"
             >
-          </v-row>
+          </div>
         </div>
       </v-col>
       <v-col cols="12" md="3" class="d-flex justify-md-end justify-center">
