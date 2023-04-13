@@ -10,6 +10,12 @@ import * as components from "vuetify/components";
 import * as directives from "vuetify/directives";
 import "@mdi/font/css/materialdesignicons.css";
 
+// FontAwesome
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { faTiktok } from '@fortawesome/free-brands-svg-icons'
+library.add(faTiktok)
+
 const myCustomLightTheme = {
   dark: false,
   colors: {
@@ -40,4 +46,4 @@ const vuetify = createVuetify({
   },
 });
 
-createApp(App).use(router).use(vuetify).mount("#app");
+createApp(App).use(router).use(vuetify).component('font-awesome-icon', FontAwesomeIcon).mount("#app");
