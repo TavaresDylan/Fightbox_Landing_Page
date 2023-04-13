@@ -1,7 +1,7 @@
 <template>
   <v-footer class="bg-secondary rounded-t-xl py-6 border-footer">
     <v-row class="mx-5">
-      <v-col cols="3" v-for="item in footerList" :key="item.title">
+      <v-col class="d-flex justify-center" cols="12" sm="6" md="3" v-for="item in footerList" :key="item.title">
         <v-list variant="flat" bg-color="transparent" density="compact">
           <v-list-subheader color="white">{{ item.title }}</v-list-subheader>
           <v-list-item
@@ -16,19 +16,19 @@
           </v-list-item>
         </v-list>
       </v-col>
-      <v-col cols="3">
-        <div class="d-flex align-center justify-space-between">
+      <v-col cols="12" md="3">
+        <div class="d-flex align-center justify-md-center justify-space-between">
           <v-row class="align-center">
             <span class="text-h1">#</span>
-            <v-img
+            <img
               class="custom-img"
               height="74"
               :src="getImageUrl('fightbox-logo-white.svg')"
-            ></v-img>
+            >
           </v-row>
         </div>
       </v-col>
-      <v-col cols="3" class="d-flex justify-end">
+      <v-col cols="12" md="3" class="d-flex justify-md-end justify-center">
         <v-btn flat variant="text" icon
           ><v-icon size="x-large" icon="mdi-instagram"></v-icon
         ></v-btn>
