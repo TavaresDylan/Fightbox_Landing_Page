@@ -26,6 +26,7 @@
       <img class="img2-bis" src="../assets/Fichier 5 copy.svg" alt="" />
       <img class="img3" src="../assets/Fichier 2.svg" alt="" />
       <img class="img3-bis" src="../assets/Fichier 2 copy.svg" alt="" />
+      <div class="banner-container"></div>
     </v-container>
 
     <hr class="my-4" />
@@ -42,33 +43,34 @@ import SubscriptionPricing from "../components/SubscriptionPricing.vue";
 
 <style scoped>
 .container1 {
-  height: 100vh;
+  min-height: 90vh;
   z-index: 1000;
+  position: relative;
 }
 .img1 {
   position: absolute;
-  top: 44vh;
-  left: 3.4vw;
+  top: 43.5vh;
+  left: 6.7vw;
   width: 22rem;
   z-index: 2;
-  transform: rotate(-30deg);
+  transform: rotate(-55deg);
 }
 
 .img1-bis {
   position: absolute;
-  top: 43vh;
-  left: 2.4vw;
+  top: 44.8vh;
+  left: 6vw;
   width: 22rem;
   z-index: 1;
-  transform: rotate(-30deg);
+  transform: rotate(-55deg);
 }
 
 .img2 {
   position: absolute;
   overflow: hidden;
   top: 90px;
-  right: -110px;
-  width: 16rem;
+  right: -15vw;
+  width: 18vw;
   z-index: 2;
   transform: rotate(-120deg);
 }
@@ -77,8 +79,8 @@ import SubscriptionPricing from "../components/SubscriptionPricing.vue";
   position: absolute;
   overflow: hidden;
   top: 100px;
-  right: -100px;
-  width: 16rem;
+  right: -16vw;
+  width: 18vw;
   z-index: 1;
   transform: rotate(-120deg);
 }
@@ -86,9 +88,9 @@ import SubscriptionPricing from "../components/SubscriptionPricing.vue";
 .img3 {
   position: absolute;
   overflow: hidden;
-  top: 90px;
-  left: -80px;
-  width: 8rem;
+  top: 0vh;
+  left: -15vw;
+  width: 9vw;
   z-index: 2;
   transform: rotate(48deg);
 }
@@ -96,9 +98,9 @@ import SubscriptionPricing from "../components/SubscriptionPricing.vue";
 .img3-bis {
   position: absolute;
   overflow: hidden;
-  top: 100px;
-  left: -70px;
-  width: 8rem;
+  top: 1vh;
+  left: -14vw;
+  width: 9vw;
   z-index: 1;
   transform: rotate(48deg);
 }
@@ -113,8 +115,8 @@ h2 {
   z-index: 1000;
   background-color: #ffe2cb;
   -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: #FFE2CB;
-  text-shadow: 0px 0px 8px #FFE2CB;
+  -webkit-text-stroke-color: #ffe2cb;
+  text-shadow: 0px 0px 8px #ffe2cb;
   font-weight: black !important;
 }
 button {
@@ -125,7 +127,77 @@ button {
   font-size: xx-large;
 }
 #container {
-  position: relative;
   overflow: hidden;
+}
+
+.banner-container {
+  width: 200vw;
+  height: 30vh;
+  position: absolute;
+  bottom: 0;
+  left: -15rem;
+  background: url("../assets/Fichier 13.svg");
+}
+
+/* XS (mobile phone) */
+@media screen and (max-width: 600px) {
+  .img3 {
+    position: absolute;
+    overflow: hidden;
+    top: -15px;
+    left: 0px;
+    width: 9vw;
+    z-index: 2;
+    transform: rotate(48deg);
+  }
+
+  .img3-bis {
+    position: absolute;
+    overflow: hidden;
+    top: -20px;
+    left: 0px;
+    width: 9vw;
+    z-index: 1;
+    transform: rotate(48deg);
+  }
+
+  .img1 {
+  position: absolute;
+  top: 43.5vh;
+  left: 6.7vw;
+  width: 50vw;
+  z-index: 2;
+  transform: rotate(-55deg);
+}
+
+.img1-bis {
+  position: absolute;
+  top: 44.8vh;
+  left: 6vw;
+  width: 50vw;
+  z-index: 1;
+  transform: rotate(-55deg);
+}
+
+.img2 {
+  position: absolute;
+  overflow: hidden;
+  top: 28vh;
+  right: -8vw;
+  width: 24vw;
+  z-index: 2;
+  transform: rotate(-120deg);
+}
+
+.img2-bis {
+  position: absolute;
+  overflow: hidden;
+  top: 28vh;
+  right: -9vw;
+  width: 24vw;
+  z-index: 1;
+  transform: rotate(-120deg);
+}
+
 }
 </style>
