@@ -14,7 +14,7 @@
           variant="outlined"
           class="mb-4"
           size="220"
-          :image="getImageUrl(member.image)"
+          :image="getImageUrl('img',member.image)"
         />
         <h2 class="text-uppercase text-center">
           {{ member.firstname }} {{ member.lastname }}
