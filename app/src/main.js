@@ -14,7 +14,8 @@ import "@mdi/font/css/materialdesignicons.css";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faTiktok } from '@fortawesome/free-brands-svg-icons'
-library.add(faTiktok)
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
+library.add(faTiktok, faArrowRight)
 
 const myCustomLightTheme = {
   dark: false,
