@@ -60,13 +60,12 @@
       >
     </div>
 
-    <v-spacer></v-spacer>
-
-    <div>
-      <v-btn size="small" icon variant="outlined" class="btn" to="/qsd"
-        ><v-icon>mdi-account</v-icon></v-btn
-      >
-    </div>
+      <v-app-bar-action>
+        <v-btn size="small" icon variant="outlined" class="btn" to="/login"
+          ><v-icon>mdi-account</v-icon></v-btn
+        >
+      </v-app-bar-action>
+    </v-container>
   </v-app-bar>
 </template>
 
