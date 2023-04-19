@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <h1>Connexion</h1>
+    <h1 class="mt-4">Connexion</h1>
     <v-row id="form-container">
       <div id="bar"></div>
       <v-spacer></v-spacer>
