@@ -63,7 +63,7 @@
     <v-spacer></v-spacer>
 
     <div>
-      <v-btn size="small" icon variant="outlined" class="btn" to="/qsd"
+      <v-btn size="small" icon variant="outlined" class="btn" to="/connexion"
         ><v-icon>mdi-account</v-icon></v-btn
       >
     </div>

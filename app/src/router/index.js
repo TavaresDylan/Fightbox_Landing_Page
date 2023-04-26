@@ -3,6 +3,7 @@ import Home from "../views/Home.vue";
 import Notfound from "../views/Notfound.vue";
 import Subscriptions from "../views/Subscriptions.vue";
 import Ourhistory from "../views/Ourhistory.vue";
+import Login from "../views/Login.vue";
 
 const routes = [
   {
@@ -14,6 +15,10 @@ const routes = [
     path: "/notre-histoire",
     component: Ourhistory,
     children: [],
+  },
+  {
+    path: "/connexion",
+    component: Login,
   },
   {
     path: "/abonnements",
