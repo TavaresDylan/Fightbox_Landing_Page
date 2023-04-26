@@ -1,67 +1,87 @@
 <template>
-  <v-navigation-drawer v-model="drawer" temporary>
-    <v-list-item
-      prepend-avatar="https://randomuser.me/api/portraits/men/78.jpg"
-      title="John Leider"
-    ></v-list-item>
-
+  <v-navigation-drawer
+    id="navigation-drawer"
+    color="background"
+    v-model="drawer"
+    temporary
+  >
     <v-divider></v-divider>
 
     <v-list density="compact" nav>
       <v-list-item
-        prepend-icon="mdi-view-dashboard"
-        title="Home"
-        value="home"
+        prepend-icon="mdi-currency-eur"
+        title="Abonnements"
+        value="abonnements"
+        to="/abonnements"
       ></v-list-item>
       <v-list-item
-        prepend-icon="mdi-forum"
-        title="About"
-        value="about"
+        prepend-icon="mdi-wallet-giftcard"
+        title="Cartes cadeaux"
+        value="cartes cadeaux"
+        to="/cartes-cadeaux"
+      ></v-list-item>
+      <v-list-item
+        prepend-icon="mdi-history"
+        title="Notre histoire"
+        value="notre histoire"
+        to="/notre-histoire"
       ></v-list-item>
     </v-list>
   </v-navigation-drawer>
 
-  <v-app-bar flat color="background">
-    <v-container class="d-flex justify-space-around">
-      <span class="hidden-sm-and-up">
-        <v-btn icon @click.stop="drawer = !drawer"
-          ><v-icon size="large" color="secondary">mdi-menu</v-icon></v-btn
-        >
-      </span>
-
-      <v-app-title class="d-flex">
-        <router-link id="app-bar-title-logo" class="d-flex" to="/">
-          <img class="d-flex align-center" src="../../assets/Fichier_18.svg" />
-        </router-link>
-      </v-app-title>
-
-      <div
-        class="border hidden-sm-and-down align-center ml-8 rounded rounded-xl w-100 d-sm-flex justify-space-around"
+  <v-app-bar flat class="px-5" color="background">
+    <span class="hidden-md-and-up">
+      <v-btn icon @click.stop="drawer = !drawer"
+        ><v-icon size="large" color="secondary">mdi-menu</v-icon></v-btn
       >
-        <router-link class="router-links" to="/abonnements"
-          >Abonnements</router-link
-        >
-        <router-link class="router-links" to="/cartes-cadeaux"
-          >Cartes cadeaux</router-link
-        >
-        <router-link class="router-links" to="/notre-histoire"
-          >Notre histoire</router-link
-        >
-      </div>
+    </span>
 
-      <v-app-bar-action>
-        <v-btn size="small" icon variant="outlined" class="btn" to="/qsd"
-          ><v-icon>mdi-account</v-icon></v-btn
-        >
-      </v-app-bar-action>
-    </v-container>
+    <v-spacer class="hidden-md-and-up"></v-spacer>
+
+    <v-app-bar-title class="ma-0" id="nav-logo-container">
+      <router-link to="/">
+        <v-img width="120" :src="getImageUrl('', 'Fichier_18.svg')" />
+      </router-link>
+    </v-app-bar-title>
+
+    <v-spacer class="hidden-sm-and-down"></v-spacer>
+
+    <div
+      class="nav-links-container hidden-sm-and-down align-center mx-8 pa-2 rounded rounded-xl justify-space-around"
+    >
+      <router-link class="router-links mx-4" to="/abonnements"
+        >Abonnements</router-link
+      >
+      <router-link class="router-links mx-4" to="/cartes-cadeaux"
+        >Cartes cadeaux</router-link
+      >
+      <router-link class="router-links mx-4" to="/notre-histoire"
+        >Notre histoire</router-link
+      >
+    </div>
+
+    <v-spacer></v-spacer>
+
+    <div>
+      <v-btn size="small" icon variant="outlined" class="btn" to="/qsd"
+        ><v-icon>mdi-account</v-icon></v-btn
+      >
+    </div>
   </v-app-bar>
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue';
+import getImageUrl from "../../utilities/imageLoader.js";
+import { ref } from "vue";
 
-const drawer = ref<boolean | null>(null)
-
-const links = ref()
+const drawer = ref<boolean | null>(null);
 </script>
+
+<style scoped>
+.nav-links-container {
+  border: 2px solid black;
+}
+#nav-logo-container {
+  max-width: 120px;
+}
+</style>

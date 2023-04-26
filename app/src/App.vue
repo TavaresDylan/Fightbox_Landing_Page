@@ -10,17 +10,14 @@
   </div>
 </template>
 
-<script setup>
-import Header from "./shared/layout/Header.vue";
-import Footer from "./shared/layout/Footer.vue";
+<script setup lang="ts">
+import Header from "@/shared/layout/Header.vue";
+import Footer from "@/shared/layout/Footer.vue";
 </script>
 
 <style>
 body {
   background-color: #ffe2cb;
-}
-#app-bar-title-logo {
-  width: 120px;
 }
 .router-links {
   text-decoration: none;
