@@ -5,7 +5,7 @@
       <div id="bar"></div>
       <v-spacer></v-spacer>
       <v-col cols="10" md="6" lg="4">
-        <v-form :ref="form" @submit.prevent>
+        <v-form ref="form" @submit.prevent>
           <v-card
             id="card"
             outlined
@@ -17,7 +17,7 @@
               v-model="mail"
               variant="text"
               hide-details="auto"
-              :rules="isNotEmpty"
+              :rules="mailRules"
               dense
               placeholder="......................"
             ></v-text-field>
@@ -83,27 +83,36 @@
 <script lang="ts" setup>
 import { ref } from "vue";
 
-const form = ref<HTMLFormElement>();
+const form = ref<HTMLFormElement | null>(null);
 const mail = ref<string>("");
 const password = ref<string>("");
 const confirmPassword = ref<string>("");
 const displayPassword = ref<boolean>(false);
 const displayConfirmPassword = ref<boolean>(false);
 
-const isNotEmpty = [(v: string) => !!v || "Ce champ est requis"];
 const passwordRules = [
-	(v: string) =>
-		(v.length >= 8 && /[^A-Za-z0-9]/.test(v)) ||
-		"Must contain at least 8 characters and one special character.",
+  (v: string) =>
+    (v.length >= 8 && /[^A-Za-z0-9]/.test(v)) ||
+    "Doit contenir au moins 8 caractères et un caractère spécial",
 ];
-const passwordConfirmRules = [(v:string) => v === password.value || "Password must match"];
+const passwordConfirmRules = [
+  (v: string) =>
+    v === password.value || "Les mots de passe ne correspondent pas",
+  (v: string) => v !== "" || "Ce champ est requis",
+];
+const mailRules = [
+  (v: string) => !!v || "Ce champs est requis",
+  (v: string) => /.+@.+\..+/.test(v) || "L'e-mail doit être valide",
+];
 
 function submit() {
-  console.log(form.value)
-  if(password.value != "" && mail.value != ""){
-    console.log(`Signup form submited with following values : \n password : ${password.value}\n mail : ${mail.value}`);
-  }
-  else{
+  if (form.value?.checkValidity()) {
+    console.log(
+      `Signup form submited with following values : \n password : ${password.value}\n mail : ${mail.value}`
+    );
+    //TODO: API call to related route to signup
+  } else {
+    form.value?.validate();
     console.log("Signup form not submited because of empty fields");
   }
 }
