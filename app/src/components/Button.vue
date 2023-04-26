@@ -1,13 +1,17 @@
 <template>
   <div>
-    <v-btn size="x-large" prepend-icon="mdi-arrow-right" color="primary" class="rounded rounded-xl" id="custom-btn">
-      {{prop.prop}}
+    <v-btn @click="submit()" size="x-large" prepend-icon="mdi-arrow-right" color="primary" class="rounded rounded-xl" id="custom-btn">
+      {{props.btnText}}
     </v-btn>
   </div>
 </template>
 
 <script lang="ts" setup>
-const prop = defineProps<{prop: string}>();
+const props = defineProps<{btnText: string}>();
+
+function submit(){
+  console.log("submited");
+}
 </script>
 
 <style lang="css" scoped>

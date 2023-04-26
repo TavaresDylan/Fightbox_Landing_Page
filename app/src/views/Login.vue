@@ -1,67 +1,67 @@
 <template>
   <v-container>
     <h1 class="mt-4">Connexion</h1>
-    <v-row id="form-container">
-      <div id="bar"></div>
-      <v-spacer></v-spacer>
-      <v-col cols="10" md="6" lg="4">
-        <v-form id="form">
-          <v-card
-            id="card"
-            outlined
-            class="px-4 py-1 border border-dark rounded rounded-lg"
+    <Form>
+      <template v-slot:card-content>
+        <v-label color="black">E-mail :</v-label>
+        <v-text-field
+          class="mb-2"
+          v-model="mail"
+          variant="text"
+          hide-details="auto"
+          :rules="isNotEmpty"
+          dense
+          color="black"
+          placeholder="Votre adresse e-mail"
+        ></v-text-field>
+        <v-label color="black">Mot de passe :</v-label>
+        <v-text-field
+          class="mb-2"
+          v-model="password"
+          hide-details="auto"
+          variant="text"
+          type="password"
+          :rules="isNotEmpty"
+          dense
+          required
+          placeholder="Votre mot de passe"
+        ></v-text-field>
+      </template>
+
+      <template v-slot:form-actions>
+        <v-checkbox v-model="rememberMe" label="Se souvenir de moi"></v-checkbox>
+        <p class="text-center">
+          <router-link to="/mot-de-passe-oublie"
+            >Mot de passe oublié ?</router-link
           >
-            <v-label color="black">E-mail :</v-label>
-            <v-text-field
-              variant="text"
-              dense
-              placeholder="Votre adresse e-mail"
-            ></v-text-field>
-            <v-label color="black">Mot de passe :</v-label>
-            <v-text-field
-              hide-details
-              variant="text"
-              dense
-              placeholder="Votre mot de passe"
-            ></v-text-field>
-          </v-card>
-          <v-checkbox label="Se souvenir de moi"></v-checkbox>
-          <p class="text-center">
-            <router-link to="/mot-de-passe-oublie"
-              >Mot de passe oublié ?</router-link
-            >
-            / <router-link to="/inscription">S'inscrire</router-link>
-          </p>
-          <Button class="text-center mt-4" prop="Se connecter"></Button>
-        </v-form>
-      </v-col>
-      <v-spacer></v-spacer>
-    </v-row>
+          / <router-link to="/inscription">S'inscrire</router-link>
+        </p>
+        <Button class="text-center mt-4" btnText="Se connecter"></Button>
+      </template>
+    </Form>
   </v-container>
 </template>
 
 <script lang="ts" setup>
 import Button from "../components/Button.vue";
+import Form from "../components/Form.vue";
+import { ref } from "vue";
+
+const mail = ref("");
+const password = ref("");
+const rememberMe = ref(false);
+
+const isNotEmpty = [(v: string) => !!v || "Ce champ est requis"];
 </script>
 
 <style lang="css" scoped>
-#card {
-  border: 2px solid black !important;
+a {
+  color: black;
+  text-decoration: none;
+  transition: ease-in 0.1s;
 }
-#form-container {
-  position: relative;
-  overflow: visible;
-  z-index: 1000;
-}
-#bar {
-  position: absolute;
-  width: 85vw;
-  height: 3px;
-  background: black;
-  border-radius: 1px;
-  top: 35px;
-  left: 50%;
-  transform: translate(-50%, 0);
-  z-index: 0;
+a:hover {
+  color: #0000ff;
+  transition: ease-in 0.1s;
 }
 </style>
