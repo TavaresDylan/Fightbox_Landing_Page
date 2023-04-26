@@ -4,6 +4,7 @@ import Notfound from "../views/Notfound.vue";
 import Subscriptions from "../views/Subscriptions.vue";
 import Ourhistory from "../views/Ourhistory.vue";
 import Login from "../views/Login.vue";
+import Signup from "../views/Signup.vue";
 
 const routes = [
   {
@@ -19,6 +20,10 @@ const routes = [
   {
     path: "/connexion",
     component: Login,
+  },
+  {
+    path: "/inscription",
+    component: Signup,
   },
   {
     path: "/abonnements",
