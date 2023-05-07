@@ -61,3 +61,11 @@ Finnaly run the application
 Currently the first draft is hosted on through Github pages.
 The domain name is *fighbox.fr* the DNS provider is [Google](https://domains.google/). If you need to manage the DNS please contact [Dylan Tavares](tavares.dylan@gmail.com) to get access crendentials.
 In the near future the website (Static V2.0) will be hosted on a Cloud Provider that will be better to handle the pricing of the hosting.
+
+## How to deploy
+
+⚠️ ***This will only deploy the VueJS app thus the website will be static***
+
+To deploy the website you need to build the project using the command `yarn run build`
+
+and finnaly run the command `yarn run deploy` which will deploy the website on the prod banch using gh-pages package
