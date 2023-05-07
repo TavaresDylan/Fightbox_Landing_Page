@@ -3,18 +3,20 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "fightbox.fr",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "vite build && cp CNAME ./dist",
+    "preview": "vite preview",
+    "deploy": "gh-pages --dist 'dist' --branch 'prod'"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.0",
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-brands-svg-icons": "^6.4.0",
     "@fortawesome/free-regular-svg-icons": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/vue-fontawesome": "^3.0.3",
-    "@fortawesome/fontawesome-free": "^6.4.0",
     "@types/node": "^18.15.11",
     "vue": "^3.2.45",
     "vue-loader": "^17.0.1",
@@ -24,6 +26,7 @@
   "devDependencies": {
     "@mdi/font": "^7.1.96",
     "@vitejs/plugin-vue": "^4.0.0",
+    "gh-pages": "^5.0.0",
     "vite": "^4.0.0"
   }
 }
