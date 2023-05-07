@@ -34,11 +34,13 @@
     <hr class="my-4" />
     <Introducing reversed="false"> </Introducing>
   </v-container>
+  <Faq></Faq>
 </template>
 
 <script lang="ts" setup>
 import Introducing from "../components/Introducing.vue";
 import SubscriptionPricing from "../components/SubscriptionPricing.vue";
+import Faq from "../components/Faq.vue";
 </script>
 
 <style scoped>
