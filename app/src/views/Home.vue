@@ -1,7 +1,7 @@
 <template>
   <v-container fluid id="container">
     <v-container class="container1">
-      <img class="my-8" src="../assets/Fichier_18.svg" />
+      <img class="my-8" :src="getImageUrl('', 'Fichier_18.svg')" />
       <h2 class="bg-transparent">
         L'abonnement ultime pour te motiver et t'aider dans ta pratique de sport
         de combat
@@ -20,12 +20,24 @@
           J'achète</v-btn
         >
       </div>
-      <img class="img1" src="../assets/Fichier 12.svg" alt="" />
-      <img class="img1-bis" src="../assets/Fichier 12 copy.svg" alt="" />
-      <img class="img2" src="../assets/Fichier 5.svg" alt="" />
-      <img class="img2-bis" src="../assets/Fichier 5 copy.svg" alt="" />
-      <img class="img3" src="../assets/Fichier 2.svg" alt="" />
-      <img class="img3-bis" src="../assets/Fichier 2 copy.svg" alt="" />
+      <img class="img1" :src="getImageUrl('', 'Fichier 12.svg')" alt="" />
+      <img
+        class="img1-bis"
+        :src="getImageUrl('', 'Fichier 12 copy.svg')"
+        alt=""
+      />
+      <img class="img2" :src="getImageUrl('', 'Fichier 5.svg')" alt="" />
+      <img
+        class="img2-bis"
+        :src="getImageUrl('', 'Fichier 5 copy.svg')"
+        alt=""
+      />
+      <img class="img3" :src="getImageUrl('', 'Fichier 2.svg')" alt="" />
+      <img
+        class="img3-bis"
+        :src="getImageUrl('', 'Fichier 2 copy.svg')"
+        alt=""
+      />
       <div class="banner-container"></div>
     </v-container>
 
@@ -41,6 +53,7 @@
 import Introducing from "../components/Introducing.vue";
 import SubscriptionPricing from "../components/SubscriptionPricing.vue";
 import Faq from "../components/Faq.vue";
+import getImageUrl from "../utilities/imageLoader.js";
 </script>
 
 <style scoped>
@@ -164,42 +177,41 @@ button {
   }
 
   .img1 {
-  position: absolute;
-  top: 43.5vh;
-  left: 6.7vw;
-  width: 50vw;
-  z-index: 2;
-  transform: rotate(-55deg);
-}
+    position: absolute;
+    top: 43.5vh;
+    left: 6.7vw;
+    width: 50vw;
+    z-index: 2;
+    transform: rotate(-55deg);
+  }
 
-.img1-bis {
-  position: absolute;
-  top: 44.8vh;
-  left: 6vw;
-  width: 50vw;
-  z-index: 1;
-  transform: rotate(-55deg);
-}
+  .img1-bis {
+    position: absolute;
+    top: 44.8vh;
+    left: 6vw;
+    width: 50vw;
+    z-index: 1;
+    transform: rotate(-55deg);
+  }
 
-.img2 {
-  position: absolute;
-  overflow: hidden;
-  top: 28vh;
-  right: -8vw;
-  width: 24vw;
-  z-index: 2;
-  transform: rotate(-120deg);
-}
+  .img2 {
+    position: absolute;
+    overflow: hidden;
+    top: 28vh;
+    right: -8vw;
+    width: 24vw;
+    z-index: 2;
+    transform: rotate(-120deg);
+  }
 
-.img2-bis {
-  position: absolute;
-  overflow: hidden;
-  top: 28vh;
-  right: -9vw;
-  width: 24vw;
-  z-index: 1;
-  transform: rotate(-120deg);
-}
-
+  .img2-bis {
+    position: absolute;
+    overflow: hidden;
+    top: 28vh;
+    right: -9vw;
+    width: 24vw;
+    z-index: 1;
+    transform: rotate(-120deg);
+  }
 }
 </style>
