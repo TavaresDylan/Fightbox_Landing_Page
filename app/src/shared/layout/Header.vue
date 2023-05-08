@@ -21,7 +21,7 @@
         to="/cartes-cadeaux"
       ></v-list-item>
       <v-list-item
-        prepend-icon="mdi-wallet-giftcard"
+        prepend-icon="mdi-store-search"
         title="Nos articles"
         value="nos articles"
         to="/nos-articles"
