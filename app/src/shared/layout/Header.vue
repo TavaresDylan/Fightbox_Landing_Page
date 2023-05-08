@@ -21,6 +21,12 @@
         to="/cartes-cadeaux"
       ></v-list-item>
       <v-list-item
+        prepend-icon="mdi-wallet-giftcard"
+        title="Nos articles"
+        value="nos articles"
+        to="/nos-articles"
+      ></v-list-item>
+      <v-list-item
         prepend-icon="mdi-history"
         title="Notre histoire"
         value="notre histoire"
@@ -54,6 +60,9 @@
       >
       <router-link class="router-links mx-4" to="/cartes-cadeaux"
         >Cartes cadeaux</router-link
+      >
+      <router-link class="router-links mx-4" to="/nos-articles"
+        >Nos articles</router-link
       >
       <router-link class="router-links mx-4" to="/notre-histoire"
         >Notre histoire</router-link

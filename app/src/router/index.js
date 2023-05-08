@@ -5,6 +5,7 @@ import Subscriptions from "../views/Subscriptions.vue";
 import Ourhistory from "../views/Ourhistory.vue";
 import Login from "../views/Login.vue";
 import Signup from "../views/Signup.vue";
+import OurProducts from "../views/OurProducts.vue";
 
 const routes = [
   {
@@ -28,6 +29,10 @@ const routes = [
   {
     path: "/abonnements",
     component: Subscriptions,
+  },
+  {
+    path: "/nos-articles",
+    component: OurProducts,
   },
   {
     path: "/page-not-found",
