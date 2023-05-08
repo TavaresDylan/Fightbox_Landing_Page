@@ -40,12 +40,10 @@
       />
       <div class="banner-container"></div>
     </v-container>
-
-    <hr class="my-4" />
-    <SubscriptionPricing></SubscriptionPricing>
-    <hr class="my-4" />
-    <Introducing reversed="false"> </Introducing>
   </v-container>
+  <SubscriptionPricing></SubscriptionPricing>
+  <hr class="my-4" />
+  <Introducing reversed="false"> </Introducing>
   <Faq></Faq>
 </template>
 
