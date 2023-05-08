@@ -41,8 +41,7 @@
       <div class="banner-container"></div>
     </v-container>
   </v-container>
-  <SubscriptionPricing></SubscriptionPricing>
-  <hr class="my-4" />
+  <SubscriptionPricing id="abonnements"></SubscriptionPricing>
   <Introducing reversed="false"> </Introducing>
   <Faq></Faq>
 </template>
