@@ -30,8 +30,11 @@ const myCustomLightTheme = {
     info: "#2196F3",
     success: "#4CAF50",
     warning: "#FB8C00",
+    darkBtn: "#000000",
   },
 };
+
+// TODO: Add the dark theme
 
 const vuetify = createVuetify({
   components,
