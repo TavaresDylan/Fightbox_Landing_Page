@@ -3,7 +3,7 @@
     <h1>Les abonnements</h1>
     <v-row class="mt-4">
       <v-spacer></v-spacer>
-      <v-col cols="12" md="4">
+      <v-col cols="12" sm="6" md="4">
         <TermCard></TermCard>
         <v-card class="d-flex justify-center align-center flex-column mt-4 rounded-lg">
           <span class="text-h6 text-uppercase font-weight-bold my-2 ml-4 align-self-start">Passionné</span>
@@ -21,7 +21,7 @@
         </v-card>
       </v-col>
       <v-spacer></v-spacer>
-      <v-col cols="12" md="4">
+      <v-col cols="12" sm="6" md="4">
         <TermCard></TermCard>
         <v-card class="d-flex justify-center align-center flex-column mt-4 rounded-lg">
           <span class="text-h6 text-uppercase font-weight-bold my-2 ml-4 align-self-start">Elite</span>
