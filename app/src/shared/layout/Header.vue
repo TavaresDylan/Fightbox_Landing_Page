@@ -12,7 +12,7 @@
         prepend-icon="mdi-currency-eur"
         title="Abonnements"
         value="abonnements"
-        to="#abonnements"
+        to="/abonnements"
       ></v-list-item>
       <v-list-item
         prepend-icon="mdi-wallet-giftcard"
@@ -55,7 +55,9 @@
     <div
       class="nav-links-container hidden-sm-and-down align-center mx-8 pa-2 rounded rounded-xl justify-space-around"
     >
-      <a class="router-links mx-4" href="/#abonnements">Abonnements</a>
+      <router-link class="router-links mx-4" to="/abonnements"
+        >Abonnements</router-link
+      >
       <router-link class="router-links mx-4" to="/cartes-cadeaux"
         >Cartes cadeaux</router-link
       >
