@@ -1,4 +1,5 @@
 <template>
+  <!-- TODO: Enchor to function to scroll on this section -->
   <v-container fluid class="sub-container mt-8 mb-16 rounded-t-xl">
     <v-container>
       <h2 class="text-sm-h4 text-md-h3 font-weight-bold text-uppercase mb-4">
@@ -67,7 +68,7 @@
               class="w-100 d-flex align-center justify-center"
               color="secondary"
             >
-              <TermCard class="w-75">
+              <TermCard class="w-75 my-4">
                 <v-img cover src="https://picsum.photos/1920/1080"></v-img>
               </TermCard>
             </v-sheet>
@@ -97,7 +98,7 @@
           <v-btn
             color="primary"
             class="rounded-xl font-weight-bold mt-4 justify-self-center"
-            variant="tonal"
+            variant="outlined"
             >Je découvre <v-icon class="ml-2" icon="mdi-arrow-right"
           /></v-btn>
         </v-col>
