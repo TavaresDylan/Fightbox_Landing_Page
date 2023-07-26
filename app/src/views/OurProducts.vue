@@ -74,6 +74,7 @@
 
 <script lang="ts" setup>
 import TermCard from "../components/TermCard.vue";
+document.title = "Nos produits";
 </script>
 
 <style lang="css" scoped>

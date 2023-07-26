@@ -45,6 +45,7 @@
 
 <script lang="ts" setup>
 import TermCard from "../components/TermCard.vue";
+document.title = "Abonnements";
 </script>
 
 <style lang="css" scoped>

@@ -4,7 +4,7 @@
   </div>
 </template>
 
-<script lang="js" setup>
+<script lang="ts" setup>
 import { onMounted } from "vue";
 
 onMounted(() => {

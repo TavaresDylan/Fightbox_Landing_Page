@@ -26,4 +26,5 @@
 import Team from "../components/Team.vue";
 import SarahHistory from "../components/SarahHistory.vue";
 import FightboxHistory from "../components/FightboxHistory.vue";
+document.title = "Notre histoire";
 </script>

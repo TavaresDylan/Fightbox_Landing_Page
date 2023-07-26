@@ -51,6 +51,7 @@ import Introducing from "../components/Introducing.vue";
 import SubscriptionPricing from "../components/SubscriptionPricing.vue";
 import Faq from "../components/Faq.vue";
 import getImageUrl from "../utilities/imageLoader.js";
+document.title = "Accueil";
 </script>
 
 <style scoped>

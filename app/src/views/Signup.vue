@@ -83,6 +83,8 @@
 <script lang="ts" setup>
 import { ref } from "vue";
 
+document.title = "Inscription";
+
 const form = ref<HTMLFormElement | null>(null);
 const mail = ref<string>("");
 const password = ref<string>("");
