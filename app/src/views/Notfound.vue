@@ -15,4 +15,5 @@
 
 <script lang="ts" setup>
 import getImageUrl from "../utilities/imageLoader.js";
+document.title = "Page non trouvée";
 </script>

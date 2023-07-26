@@ -67,6 +67,7 @@
 
 <script lang="ts" setup>
 import { ref } from "vue";
+document.title = "Connexion";
 
 const mail = ref("");
 const password = ref("");
